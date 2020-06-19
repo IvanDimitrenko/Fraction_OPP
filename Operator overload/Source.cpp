@@ -187,7 +187,7 @@ this->denominator = i;*/
 		return *this;
 	}
 
-	// Ñomparison operators example in class
+	// Ã‘omparison operators example in class
 #ifdef IMPLEMENTATION_OPTIONS_COMPARE
 
 	bool operator< (const Fraction& other)const
@@ -397,14 +397,14 @@ bool operator< (Fraction& right, Fraction& left) //  It allso possible with the 
 {
 	return (double(right) < double(left)) ? 1 : 0;
 }
-bool operator< (Fraction& right, Fraction& left)
+/*bool operator< (Fraction& right, Fraction& left)
 {
 	(
 		right.get_integer() + double(right.get_numerator() / right.get_denominator())
 		<
 		left.get_integer() + double(left.get_numerator() / left.get_denominator())
 		? 1 : 0);
-}
+}*/
 bool operator<=(const Fraction& right, const Fraction& left)
 {
 	return right.get_integer() + double(right.get_numerator() / right.get_denominator()) <= left.get_integer() + double(left.get_numerator() / left.get_denominator()) ? 1 : 0;
